@@ -7,3 +7,7 @@ const app =  express();
 
 app.use(cors());
 app.use(express.json());
+
+app.listen(8888, () => {
+  console.log("rodando na porta 8888")
+})
