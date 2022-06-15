@@ -1,3 +1,5 @@
+
+import 'dotenv/config'
 import mysql from "mysql";
 
 const db = mysql.createPool({
