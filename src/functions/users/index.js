@@ -47,7 +47,6 @@ export const login = (req, res, next) => {
             return res.send(error);
           }
           if (response) {
-            console.log(result)
             return res.send({ msg: "Usuário logado", username: name, userId: result[0].id });
           } else {
             return res.send({ msg: "Senha incorreta" });
